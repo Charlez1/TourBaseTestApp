@@ -83,6 +83,7 @@ fun TourContent(
             maxLines = 2
         )
         Spacer(modifier = Modifier.height(2.dp))
+
         Row {
             if(content.price.price != content.price.factPrice) {
                 Text(
