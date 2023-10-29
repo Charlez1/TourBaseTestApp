@@ -109,7 +109,6 @@ fun TourContent(
                     maxLines = 1
                 )
         }
-
     }
 }
 
