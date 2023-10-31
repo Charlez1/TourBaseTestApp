@@ -34,6 +34,7 @@ class MainActivity : ComponentActivity() {
                     BottomBarItem(Screen.Chat, R.string.bottom_bar_chat, R.drawable.comments),
                     BottomBarItem(Screen.More, R.string.bottom_bar_more, R.drawable.dots_horizontal)
                 )
+
                 val showBottomBar = navHostController
                     .currentBackStackEntryAsState().value?.destination?.route in items.map { it.screen.route }
                 Scaffold(
