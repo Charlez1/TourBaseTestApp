@@ -15,16 +15,20 @@ private val LightColorScheme = lightColorScheme(
     primary = TextColor,
     secondary = SecondaryTextColor,
     background = BackgroundColor,
+    onBackground = BottomBarColor,
     outline = BorderColor,
-    error = DangerColor
+    error = DangerColor,
+    tertiary = SelectedColor
 )
 
 private val DarkColorScheme = darkColorScheme(
     primary = DarkTextColor,
     secondary = SecondaryTextColor,
     background = DarkBackgroundColor,
+    onBackground = DarkBottomBarColor,
     outline = DarkBorderColor,
-    error = DangerColor
+    error = DangerColor,
+    tertiary = SelectedColor
 )
 
 

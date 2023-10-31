@@ -45,7 +45,7 @@ fun BlogScreen(
     }
     if (state.isLoading) {
         Box(
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier.fillMaxWidth(),
             contentAlignment = Alignment.Center
         ) {
             CircularProgressIndicator()
@@ -72,7 +72,6 @@ fun BlogScreenContent(
 
             LoadPicassoImage(
                 url = blogInfo.image.large,
-                modifier = Modifier.fillMaxWidth()
             )
             Box(
                 modifier = Modifier
@@ -82,8 +81,6 @@ fun BlogScreenContent(
             ) {
                 IconButton(
                     onClick = onNavigateBack,
-                    modifier = Modifier
-                        .fillMaxSize()
                 ) {
                     Icon(
                         painter = painterResource(id = R.drawable.baseline_arrow_back_24),

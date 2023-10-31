@@ -1,21 +1,23 @@
 package com.stu.testapptour.navigation
 
+import android.annotation.SuppressLint
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.stu.testapptour.features.blog.presetnation.BlogScreen
 import com.stu.testapptour.features.home.presetnation.HomeScreen
 
+@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun AppNavGraph(
-    navHostController: NavHostController = rememberNavController()
+    navHostController: NavHostController
 ) {
+
     NavHost(
-        navController  = navHostController,
+        navController = navHostController,
         startDestination = Screen.Home.route,
     ) {
         composable(
@@ -34,9 +36,13 @@ fun AppNavGraph(
             arguments = listOf(navArgument(Screen.KEY_BLOG) { type = NavType.IntType })
         ) {
             BlogScreen(
-                blogId =  it.arguments?.getInt(Screen.KEY_BLOG) ?: throw IllegalArgumentException(),
+                blogId = it.arguments?.getInt(Screen.KEY_BLOG) ?: throw IllegalArgumentException(),
                 onNavigateBack = { navHostController.popBackStack() }
             )
         }
+        composable(Screen.Map.route) {}
+        composable(Screen.Reservation.route) {}
+        composable(Screen.Chat.route) {}
+        composable(Screen.More.route) {}
     }
 }

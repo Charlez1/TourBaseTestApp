@@ -19,8 +19,12 @@ val DangerColor = Color(0xFFE54131)
 val BackgroundColor = Color(0xFFFFFFFF)
 val DarkBackgroundColor = Color(0xFF1A1A1A)
 
+
+val DarkBottomBarColor = Color(0xFF2D2D2D)
+val BottomBarColor = BackgroundColor
+
 //val Gray1 = Color(0xFFFFFFFF)
 //val DarkGray1 = Color(0xFF1A1A1A)
 //val Gray4 = Color(0x33000000)
 //val DarkGray20 = Color(0xFFFAFAFA)
-//val Primary8 = Color(0xFF1B7DDF)
+val SelectedColor = Color(0xFF1B7DDF)

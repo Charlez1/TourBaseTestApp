@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TestAppTour</string>
+    <string name="bottom_bar_home">Главная</string>
+    <string name="bottom_bar_map">Карта</string>
+    <string name="bottom_bar_reservation">Бронь</string>
+    <string name="bottom_bar_chat">Чат</string>
+    <string name="bottom_bar_more">Еще</string>
 </resources>
